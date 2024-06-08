@@ -34,7 +34,7 @@ class romeditor(QWidget):
         self.pad_byte_label = QLabel('Pad with byte:')
         layout.addWidget(self.pad_byte_label)
         self.pad_byte_combo = QComboBox()
-        self.pad_byte_combo.addItems(['00', 'ff', 'Custom'])
+        self.pad_byte_combo.addItems(['00', 'FF', 'Custom'])
         self.pad_byte_combo.currentIndexChanged.connect(self.toggle_custom_byte_input)
         layout.addWidget(self.pad_byte_combo)
 
